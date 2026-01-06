@@ -288,7 +288,7 @@ function App() {
         <p>
           Archaeological Site Mapping Platform  
           <br />
-          Industrial AI for Cultural Heritage & Spatial Intelligence
+          AI for Cultural Heritage & Spatial Intelligence
         </p>
       </footer>
     </div>
