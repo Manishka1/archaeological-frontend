@@ -67,7 +67,7 @@ function App() {
       <section id="overview" className="hero">
         <h1>AI‑Driven Archaeological Intelligence</h1>
         <p>
-          An industrial‑grade platform combining soil science, vegetation
+          An platform combining soil science, vegetation
           analysis, and deep learning to assist archaeological exploration.
         </p>
       </section>
@@ -76,7 +76,6 @@ function App() {
       <section id="theory" className="section two-col">
         <div className="panel">
   <h2>Role of Soil in Archaeology</h2>
-
   <p>
     Soil acts as a long‑term record of both natural processes and human activity.
     Over centuries, settlements alter soil composition through construction,
@@ -111,8 +110,7 @@ function App() {
 
   <p>
     Vegetation growth is closely linked to what lies beneath the surface.
-    Buried walls, foundations, ditches, and ancient roads modify soil depth,
-    moisture retention, and nutrient distribution, which in turn influences
+    Buried walls, foundations, ditches, and ancient roads modify soil depth, which in turn influences
     plant health and growth patterns above them.
   </p>
 <div className="panel">
@@ -187,45 +185,45 @@ function App() {
           </div>
 
           <div className="model-card">
-            <h3>Vegetation Segmentation</h3>
-            <p><b>Model:</b> SegFormer‑B0</p>
-            <div className="panel">
+  <h3>Vegetation Segmentation</h3>
+  <p><b>Model:</b> Lightweight UNet (UNet‑Lite)</p>
+
+  <div className="panel">
     <p>
-    The vegetation mapping module is powered by <b>SegFormer-B0</b>, a
-    transformer-based semantic segmentation model designed to capture both
-    fine-grained details and global spatial context. Unlike traditional
-    convolutional networks, transformer architectures analyze long-range
-    relationships across the entire image, improving understanding of complex
-    natural scenes.
-  </p>
+      The vegetation mapping module is powered by a <b>Lightweight UNet‑based
+      semantic segmentation model</b>, designed to efficiently distinguish
+      vegetation from non‑vegetation areas using pixel‑level spatial analysis.
+      UNet architectures are widely used in environmental and remote‑sensing
+      applications due to their ability to preserve fine spatial details.
+    </p>
 
-  <ul className="inline-list">
-    <li>
-      <b>Long-range spatial dependency capture</b>, enabling recognition of
-      large-scale vegetation patterns.
-    </li>
+    <ul className="inline-list">
+      <li>
+        <b>Encoder–decoder architecture with skip connections</b>, enabling the
+        model to retain fine‑grained spatial information while capturing broader
+        contextual patterns.
+      </li>
 
-    <li>
-      <b>Effective handling of complex natural textures</b>, such as mixed
-      vegetation and uneven terrain.
-    </li>
+      <li>
+        <b>Efficient handling of natural textures</b>, such as uneven terrain,
+        mixed vegetation density, and variable lighting conditions.
+      </li>
 
-    <li>
-      <b>Precise pixel-level segmentation</b>, producing accurate vegetation
-      and non-vegetation masks.
-    </li>
-  </ul>
+      <li>
+        <b>Pixel‑level binary segmentation</b>, producing accurate vegetation
+        and non‑vegetation masks suitable for quantitative analysis.
+      </li>
+    </ul>
 
-  <p>
-    In this platform, SegFormer is trained to separate vegetation from
-    non-vegetation areas. The resulting segmentation masks allow accurate
-    calculation of vegetation coverage percentages, helping archaeologists
-    detect anomalous growth patterns that may indicate subsurface
-    archaeological features.
-  </p>
+    <p>
+      In this platform, the UNet‑Lite model is trained to segment vegetation
+      regions from landscape imagery. The resulting segmentation masks are used
+      to calculate vegetation coverage percentages, allowing archaeologists to
+      identify anomalous growth patterns that may indicate buried structures or
+      subsurface archaeological features.
+    </p>
+  </div>
 </div>
-
-          </div>
         </div>
       </section>
 
